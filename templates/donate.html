@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+	<head>
+		<title>Currency Converter</title>
+		<meta charset="utf-8" />
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/other.css') }}">
+		<link rel="icon" href="{{ url_for('static',filename='images/icons/favicon.ico') }}">
+		 <script type="text/javascript">
+		    var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+		    if(isAndroid) {
+			document.write('<meta name="viewport" content="width=device-width,height='+window.innerHeight+', initial-scale=1.0">');
+		    }
+        	</script>
+	</head>
+	<body style="height:100%;">
+        <div style="height:100%;" class="container">
+		<div>
+		        <a class="goback" href="/">Back to the currency converter</a></br>
+			<label style="display:inline-block;width:800px;margin-top:30px;">We are a small startup, thousands of people like you can help us stand up for an open service for all. We rely on donations to carry out our mission, Will you give today?</label>
+			<form style="margin-top:40px;" action="/donate" method="post">
+				Your donation:</br>
+				<input name="donation"></input></br>
+				<button type="submit" style="margin-top: 3px">Donate</button>
+			</form>
+			{{ thanks }}
+		</div>
+            <div class="footer">
+                <label>Copyright © 2018</label>
+            </div>
+        </div>
+	</body>
+</html>

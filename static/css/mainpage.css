@@ -1,0 +1,161 @@
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url('../fonts/montserrat/Montserrat-Thin.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Terminus;
+  src: url('../fonts/terminus/Terminus.ttf'); 
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.container{
+	overflow:auto;
+	height:100%;
+	background: url("../images/1.jpg") no-repeat center top;
+	min-width: 1000px;
+	min-height: 562px;
+	background-size:cover;
+	-webkit-background-size: cover;
+	position:relative;
+}
+
+
+.ablock{
+	margin-top:30px;
+	float:right;
+	width:320px;
+	height:80px;
+	padding:9px;
+	font-family:Terminus;
+	font-size:95%;
+	text-align:justify;
+	color:rgba(265,265,265,0.94);
+	background:rgba(0,0,0,0.14);
+}
+
+.ablock:hover {
+	background:rgba(0,0,0,0.24);
+}
+
+a.button{
+	display:block;
+	font-weight:bold;
+	outline:none;
+	font-family:Montserrat-Thin;
+	font-size:113%;
+	text-shadow: 2px 0 rgba(136, 136, 136,0.7);
+	color:rgba(0,0,0,0.6);
+	border:groove rgba(180,180,180,0.25) 2px;
+	text-decoration:none;
+	width:144px;
+	height:23px;
+	text-align:right;
+	padding:4px;
+	background: url(../images/icons/rateicon.ico) no-repeat rgba(205,205,205,0.3);
+    background-position: left 6px center;
+}
+
+a.button:hover{
+	background-color:rgba(170,170,170,.53);
+	color:rgba(265,265,265,.82);
+}
+
+.theFormdiv {
+	margin-top: 280px;
+	text-align:center;
+}
+
+.theForm {
+	display: inline-block;
+}
+
+.space{
+	padding-left:78px;
+}
+
+.input{
+	width:292px;
+	height:80px;
+	font-family:Arial;
+	font-size:350%;
+	background:rgba(210,210,210,0.35);
+	border-radius: 25px;
+	border:solid rgba(210,210,210,0.4) 1px;
+	color: black;
+	outline:none;
+}
+
+.menu {
+	width:270px;
+	height: 21px;
+	font-size: 16px;
+	margin-top:2px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	outline:none;
+}
+
+.submit_button{
+	margin-top:15px;
+	height:55px;
+	font-family:Montserrat-Bold;
+    padding:9px;
+	font-size:115%;
+	font-weight:bolder;
+	border: groove rgb(180,180,180) 2px;
+	border-radius: 25px;
+	background:rgba(229, 129, 41,0.3);
+	outline:none;
+    text-shadow: 1px 0 rgba(0,0,0,0.59);
+	color:rgba(249, 247, 249,0.89);
+    letter-spacing:1px;
+}
+
+.submit_button:hover {
+	color:rgba(0,0,0,0.55);
+	background: rgba(229, 129, 41,.2);
+}
+
+.submit_button:active{
+
+    color:rgba(0,0,0,0.55);
+	background: rgba(229, 129, 41,.08);
+    border: groove rgba(180,180,180,0.45) 2px;
+}
+.footer{
+	bottom:0;
+	position:absolute;
+	font-family: Montserrat-Thin;
+	font-weight:bolder;
+	text-shadow: -1px 0 rgba(20,20,20,.3), 0 1px rgba(20,20,20,.3), 1px 0 rgba(20,20,20,.3), 0 -1px rgba(20,20,20,.3);
+	height:20px;
+	color: #babc40;
+	padding: 4px;
+    padding-left: 10px;
+    background-color: rgba(50,50,50,.3);
+}
+
+.footer:hover{
+    background-color: rgba(50,50,50,.5);
+}
+
+.links {
+	text-decoration:none;
+	color: #babc40;
+}
+
+.links:hover{
+    text-shadow:none;
+    color: #babc60;
+}

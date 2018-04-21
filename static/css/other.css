@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Terminus;
+  src: url('../fonts/terminus/Terminus.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url('../fonts/montserrat/Montserrat-Thin.ttf');
+}
+
+html, body{
+	margin:0;
+	padding:0;
+}
+
+.container{
+	overflow: auto;
+	min-width:1000px;
+	min-height:562px;
+	background: url(../images/index.jpg);
+	background-repeat: repeat;
+	position:relative;
+	text-align:center;
+}
+
+table, th, td {
+
+	border: 1px solid black;
+	border-collapse: collapse;
+	width:800px;
+	margin-top:20px;
+}
+
+th,td {
+	padding:9px;
+}
+
+.lbtext{
+	display: inline-block;
+	font-weight:bold;
+	font-size:125%;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.table-div{
+	display: inline-block;
+	text-align:left;
+	font-size:110%;
+	margin-bottom: 100px;
+}	
+
+.goback{
+	font-weight:bold;
+	font-family:Terminus;
+	text-shadow: 1px 0 rgba(136, 136, 136,0.2);
+	text-decoration:none;
+	color:black;
+	position:absolute;
+	border:dashed 1px rgba(206, 206, 206,0.75);
+	top:0;
+	right:0;
+	text-align:right;
+	padding:1px;
+	background: rgba(180,180,180,0.75);
+	outline:none;
+}
+
+.footer{
+	position:absolute;
+	bottom:0;
+	font-family: Montserrat-Thin;
+	font-weight:bold;
+	text-shadow: -1px 0 rgba(0,0,0,0.05), 0 1px rgba(0,0,0,0.05), 1px 0 rgba(0,0,0,0.05), 0 -1px rgba(0,0,0,0.05);
+	color:rgb(40, 70, 265);
+	height:20px;
+	padding:2px;
+
+}
+
+.links{
+
+	color:rgb(40, 70, 265);
+	text-decoration:none;
+}
+
+.links:hover{
+	color:rgb(40, 10, 265);
+}
+
+.lbabout{
+	margin-top:25px;
+	margin-bottom:25px;
+	font-weight:bold;
+	font-size:150%;
+	display:inline-block;
+}
+
+.about{
+	width:80%;
+	display:inline-block;
+	font-size:120%;
+
+}

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Currency Converter</title>
+		<meta charset="utf-8" />
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/other.css') }}">
+		<link rel="icon" href="{{ url_for('static',filename='images/icons/favicon.ico') }}">
+	</head>
+	<body>
+        <div class="container">
+            <div>
+                <a class="goback" href="/">Back to the currency converter</a>
+                <label class="lbtext"> RATES ARE RECORDED ON 2, APRIL 2018</label><br>
+            </div>
+            <div>
+                <div class="table-div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>US Dollar</th>
+                                <th>1.00 USD</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                        <td>United Arab Emirates Dirham (AED)</td>
+                        <td>{{arr[0]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Afghan Afghani (AFN)</td>
+                        <td>{{arr[1]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Albanian Lek (ALL)</td>
+                        <td>{{arr[2]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Armenian Dram (AMD)</td>
+                        <td>{{arr[3]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Netherlands Antillean Guilder (ANG)</td>
+                        <td>{{arr[4]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Angolan Kwanza (AOA)</td>
+                        <td>{{arr[5]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Argentine Peso (ARS)</td>
+                        <td>{{arr[6]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Australian Dollar (AUD)</td>
+                        <td>{{arr[7]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Aruban Florin (AWG)</td>
+                        <td>{{arr[8]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Azerbaijani Manat (AZN)</td>
+                        <td>{{arr[9]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bosnia-Herzegovina Mark (BAM)</td>
+                        <td>{{arr[10]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Barbadian Dollar (BBD)</td>
+                        <td>{{arr[11]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bangladeshi Taka (BDT)</td>
+                        <td>{{arr[12]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bulgarian Lev (BGN)</td>
+                        <td>{{arr[13]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bahraini Dinar (BHD)</td>
+                        <td>{{arr[14]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Burundian Franc (BIF)</td>
+                        <td>{{arr[15]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bermudan Dollar (BMD)</td>
+                        <td>{{arr[16]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Brunei Dollar (BND)</td>
+                        <td>{{arr[17]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bolivian Boliviano (BOB)</td>
+                        <td>{{arr[18]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Brazilian Real (BRL)</td>
+                        <td>{{arr[19]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bahamian Dollar (BSD)</td>
+                        <td>{{arr[20]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bitcoin (BTC)</td>
+                        <td>{{arr[21]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Bhutanese Ngultrum (BTN)</td>
+                        <td>{{arr[22]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Botswanan Pula (BWP)</td>
+                        <td>{{arr[23]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Belarusian Ruble (BYR)</td>
+                        <td>{{arr[24]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Belize Dollar (BZD)</td>
+                        <td>{{arr[25]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Canadian Dollar (CAD)</td>
+                        <td>{{arr[26]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Congolese Franc (CDF)</td>
+                        <td>{{arr[27]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Swiss Franc (CHF)</td>
+                        <td>{{arr[28]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Chilean Unit of Account (UF) (CLF)</td>
+                        <td>{{arr[29]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Chilean Peso (CLP)</td>
+                        <td>{{arr[30]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Chinese Yuan (CNY)</td>
+                        <td>{{arr[31]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Colombian Peso (COP)</td>
+                        <td>{{arr[32]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Costa Rican Colón (CRC)</td>
+                        <td>{{arr[33]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Cuban Peso (CUP)</td>
+                        <td>{{arr[34]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Cape Verdean Escudo (CVE)</td>
+                        <td>{{arr[35]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Czech Republic Koruna (CZK)</td>
+                        <td>{{arr[36]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Djiboutian Franc (DJF)</td>
+                        <td>{{arr[37]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Danish Krone (DKK)</td>
+                        <td>{{arr[38]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Dominican Peso (DOP)</td>
+                        <td>{{arr[39]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Algerian Dinar (DZD)</td>
+                        <td>{{arr[40]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Estonian Kroon (EEK)</td>
+                        <td>{{arr[41]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Egyptian Pound (EGP)</td>
+                        <td>{{arr[42]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Ethiopian Birr (ETB)</td>
+                        <td>{{arr[43]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Euro (EUR)</td>
+                        <td>{{arr[44]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Fijian Dollar (FJD)</td>
+                        <td>{{arr[45]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Falkland Islands Pound (FKP)</td>
+                        <td>{{arr[46]}}</td>
+                        </tr>
+                        <tr>
+                        <td>British Pound Sterling (GBP)</td>
+                        <td>{{arr[47]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Georgian Lari (GEL)</td>
+                        <td>{{arr[48]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Ghanaian Cedi (GHS)</td>
+                        <td>{{arr[49]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Gibraltar Pound (GIP)</td>
+                        <td>{{arr[50]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Gambian Dalasi (GMD)</td>
+                        <td>{{arr[51]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Guinean Franc (GNF)</td>
+                        <td>{{arr[52]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Guatemalan Quetzal (GTQ)</td>
+                        <td>{{arr[53]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Guyanaese Dollar (GYD)</td>
+                        <td>{{arr[54]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Hong Kong Dollar (HKD)</td>
+                        <td>{{arr[55]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Honduran Lempira (HNL)</td>
+                        <td>{{arr[56]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Croatian Kuna (HRK)</td>
+                        <td>{{arr[57]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Haitian Gourde (HTG)</td>
+                        <td>{{arr[58]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Hungarian Forint (HUF)</td>
+                        <td>{{arr[59]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Indonesian Rupiah (IDR)</td>
+                        <td>{{arr[60]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Israeli New Sheqel (ILS)</td>
+                        <td>{{arr[61]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Indian Rupee (INR)</td>
+                        <td>{{arr[62]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Iraqi Dinar (IQD)</td>
+                        <td>{{arr[63]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Iranian Rial (IRR)</td>
+                        <td>{{arr[64]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Icelandic Króna (ISK)</td>
+                        <td>{{arr[65]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Jersey Pound (JEP)</td>
+                        <td>{{arr[66]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Jamaican Dollar (JMD)</td>
+                        <td>{{arr[67]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Jordanian Dinar (JOD)</td>
+                        <td>{{arr[68]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Japanese Yen (JPY)</td>
+                        <td>{{arr[69]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Kenyan Shilling (KES)</td>
+                        <td>{{arr[70]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Kyrgystani Som (KGS)</td>
+                        <td>{{arr[71]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Cambodian Riel (KHR)</td>
+                        <td>{{arr[72]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Comorian Franc (KMF)</td>
+                        <td>{{arr[73]}}</td>
+                        </tr>
+                        <tr>
+                        <td>North Korean Won (KPW)</td>
+                        <td>{{arr[74]}}</td>
+                        </tr>
+                        <tr>
+                        <td>South Korean Won (KRW)</td>
+                        <td>{{arr[75]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Kuwaiti Dinar (KWD)</td>
+                        <td>{{arr[76]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Cayman Islands Dollar (KYD)</td>
+                        <td>{{arr[77]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Kazakhstani Tenge (KZT)</td>
+                        <td>{{arr[78]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Laotian Kip (LAK)</td>
+                        <td>{{arr[79]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Lebanese Pound (LBP)</td>
+                        <td>{{arr[80]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Sri Lankan Rupee (LKR)</td>
+                        <td>{{arr[81]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Liberian Dollar (LRD)</td>
+                        <td>{{arr[82]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Lesotho Loti (LSL)</td>
+                        <td>{{arr[83]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Lithuanian Litas (LTL)</td>
+                        <td>{{arr[84]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Latvian Lats (LVL)</td>
+                        <td>{{arr[85]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Libyan Dinar (LYD)</td>
+                        <td>{{arr[86]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Moroccan Dirham (MAD)</td>
+                        <td>{{arr[87]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Moldovan Leu (MDL)</td>
+                        <td>{{arr[88]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Malagasy Ariary (MGA)</td>
+                        <td>{{arr[89]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Macedonian Denar (MKD)</td>
+                        <td>{{arr[90]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Myanma Kyat (MMK)</td>
+                        <td>{{arr[91]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Mongolian Tugrik (MNT)</td>
+                        <td>{{arr[92]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Macanese Pataca (MOP)</td>
+                        <td>{{arr[93]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Mauritanian Ouguiya (MRO)</td>
+                        <td>{{arr[94]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Mauritian Rupee (MUR)</td>
+                        <td>{{arr[95]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Maldivian Rufiyaa (MVR)</td>
+                        <td>{{arr[96]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Malawian Kwacha (MWK)</td>
+                        <td>{{arr[97]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Mexican Peso (MXN)</td>
+                        <td>{{arr[98]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Malaysian Ringgit (MYR)</td>
+                        <td>{{arr[99]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Mozambican Metical (MZN)</td>
+                        <td>{{arr[100]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Namibian Dollar (NAD)</td>
+                        <td>{{arr[101]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Nigerian Naira (NGN)</td>
+                        <td>{{arr[102]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Nicaraguan Córdoba (NIO)</td>
+                        <td>{{arr[103]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Norwegian Krone (NOK)</td>
+                        <td>{{arr[104]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Nepalese Rupee (NPR)</td>
+                        <td>{{arr[105]}}</td>
+                        </tr>
+                        <tr>
+                        <td>New Zealand Dollar (NZD)</td>
+                        <td>{{arr[106]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Omani Rial (OMR)</td>
+                        <td>{{arr[107]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Panamanian Balboa (PAB)</td>
+                        <td>{{arr[108]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Peruvian Nuevo Sol (PEN)</td>
+                        <td>{{arr[109]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Papua New Guinean Kina (PGK)</td>
+                        <td>{{arr[110]}}</td>
+                        </tr>
+                        <tr>
+                        <td>Philippine Peso (PHP)</td>
+                        <td>{{arr[111]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Pakistani Rupee (PKR)</td>
+                            <td>{{arr[112]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Polish Zloty (PLN)</td>
+                            <td>{{arr[113]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Paraguayan Guarani (PYG)</td>
+                            <td>{{arr[114]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Qatari Rial (QAR)</td>
+                            <td>{{arr[115]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Romanian Leu (RON)</td>
+                            <td>{{arr[116]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Serbian Dinar (RSD)</td>
+                            <td>{{arr[117]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Russian Ruble (RUB)</td>
+                            <td>{{arr[118]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Rwandan Franc (RWF)</td>
+                            <td>{{arr[119]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Saudi Riyal (SAR)</td>
+                            <td>{{arr[120]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Solomon Islands Dollar (SBD)</td>
+                            <td>{{arr[121]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Seychellois Rupee (SCR)</td>
+                            <td>{{arr[122]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Sudanese Pound (SDG)</td>
+                            <td>{{arr[123]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Swedish Krona (SEK)</td>
+                            <td>{{arr[124]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Singapore Dollar (SGD)</td>
+                            <td>{{arr[125]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Saint Helena Pound (SHP)</td>
+                            <td>{{arr[126]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Sierra Leonean Leone (SLL)</td>
+                            <td>{{arr[127]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Somali Shilling (SOS)</td>
+                            <td>{{arr[128]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Surinamese Dollar (SRD)</td>
+                            <td>{{arr[129]}}</td>
+                        </tr>
+                        <tr>
+                            <td>São Tomé and Príncipe Dobra (STD)</td>
+                            <td>{{arr[130]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Salvadoran Colón (SVC)</td>
+                            <td>{{arr[131]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Syrian Pound (SYP)</td>
+                            <td>{{arr[132]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Swazi Lilangeni (SZL)</td>
+                            <td>{{arr[133]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Thai Baht (THB)</td>
+                            <td>{{arr[134]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tajikistani Somoni (TJS)</td>
+                            <td>{{arr[135]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Turkmenistani Manat (TMT)</td>
+                            <td>{{arr[136]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tunisian Dinar (TND)</td>
+                            <td>{{arr[137]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tongan Paʻanga (TOP)</td>
+                            <td>{{arr[138]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Turkish Lira (TRY)</td>
+                            <td>{{arr[139]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Trinidad and Tobago Dollar (TTD)</td>
+                            <td>{{arr[140]}}</td>
+                        </tr>
+                        <tr>
+                            <td>New Taiwan Dollar (TWD)</td>
+                            <td>{{arr[141]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tanzanian Shilling (TZS)</td>
+                            <td>{{arr[142]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Ukrainian Hryvnia (UAH)</td>
+                            <td>{{arr[143]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Ugandan Shilling (UGX)</td>
+                            <td>{{arr[144]}}</td>
+                        <tr>
+                            <td>Uruguayan Peso (UYU)</td>
+                            <td>{{arr[146]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Uzbekistan Som (UZS)</td>
+                            <td>{{arr[147]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Venezuelan Bolívar (VEF)</td>
+                            <td>{{arr[148]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Vietnamese Dong (VND)</td>
+                            <td>{{arr[149]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Vanuatu Vatu (VUV)</td>
+                            <td>{{arr[150]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Samoan Tala (WST)</td>
+                            <td>{{arr[151]}}</td>
+                        </tr>
+                        <tr>
+                            <td>CFA Franc BEAC (XAF)</td>
+                            <td>{{arr[152]}}</td>
+                        </tr>
+                        <tr>
+                            <td>East Caribbean Dollar (XCD)</td>
+                            <td>{{arr[153]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Special Drawing Rights (XDR)</td>
+                            <td>{{arr[154]}}</td>
+                        </tr>
+                        <tr>
+                            <td>CFA Franc BCEAO (XOF)</td>
+                            <td>{{arr[155]}}</td>
+                        </tr>
+                        <tr>
+                            <td>CFP Franc (XPF)</td>
+                            <td>{{arr[156]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Yemeni Rial (YER)</td>
+                            <td>{{arr[157]}}</td>
+                        </tr>
+                        <tr>
+                            <td>South African Rand (ZAR)</td>
+                            <td>{{arr[158]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Zambian Kwacha (ZMK)</td>
+                            <td>{{arr[159]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Zimbabwean Dollar (ZWL)</td>
+                            <td>{{arr[160]}}</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="footer">
+                <label>Copyright © 2018</label> &nbsp; |&nbsp;
+                <a class="links"  href="/about-us">About Us</a> &nbsp; |&nbsp;
+                <a class="links"  href="/contact">Contact Us</a> &nbsp; |&nbsp;
+                <a class="links" href="/donate">Donate</a>
+            </div>
+            </div>
+	</body>
+</html>
